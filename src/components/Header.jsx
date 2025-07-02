@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 const Header = () => {
@@ -63,11 +63,11 @@ const Header = () => {
           </nav>
 
           {/* Social Media & Cart Icons */}
-          <div className="flex items-center space-x-4">
-            <button className="text-[#2D3B36] hover:text-[#35433E] transition-colors duration-300 md:hidden">
-              {/* Cart Icon */}
+          <div className="flex items-center space-x-4 lg:space-x-6">
+            {/* Cart Icon */}
+            <button className="p-2 hover:opacity-70 transition-opacity duration-300">
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 lg:w-7 lg:h-7"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -80,14 +80,15 @@ const Header = () => {
                 />
               </svg>
             </button>
+
             <span className="text-[#2D3B36] font-inter text-sm hidden md:inline-block">
               Cart (1)
             </span>
 
             {/* Heart Icon */}
-            <button className="text-[#2D3B36] hover:text-[#35433E] transition-colors duration-300 md:hidden">
+            <button className="p-2 hover:opacity-70 transition-opacity duration-300">
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 lg:w-7 lg:h-7"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -102,9 +103,9 @@ const Header = () => {
             </button>
 
             {/* User Icon */}
-            <button className="text-[#2D3B36] hover:text-[#35433E] transition-colors duration-300 md:hidden">
+            <button className="p-2 hover:opacity-70 transition-opacity duration-300">
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 lg:w-7 lg:h-7"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

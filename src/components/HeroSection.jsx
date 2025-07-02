@@ -56,9 +56,8 @@ const HeroSection = () => {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-screen bg-[#EFF5E1] overflow-hidden flex flex-col items-center justify-center px-4 text-center mt-[80px]" // Added margin-top to push the section below the header
+      className="relative min-h-screen bg-[#EFF5E1] overflow-hidden flex flex-col items-center justify-center px-4 text-center mt-[80px]"
     >
-      {/* Background Text (Bottom Center) */}
       <div
         ref={backgroundTextRef}
         className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-6 pointer-events-none opacity-0 z-0"
@@ -68,10 +67,9 @@ const HeroSection = () => {
         </h1>
       </div>
 
-      {/* Floating product on top right */}
       <div
         ref={productRef}
-        className="absolute top-12 right-12 z-20 opacity-0 transition-transform duration-300 hover:scale-105"
+        className="absolute top-12 right-12 z-20 opacity-0 transition-transform duration-300 hover:scale-105 md:block hidden"
       >
         <img
           src={PlumImg}
@@ -80,38 +78,36 @@ const HeroSection = () => {
         />
       </div>
 
-      {/* Top-Left Subtitle */}
       <div
         ref={subtitleRef}
         className="absolute top-12 left-8 md:left-16 max-w-md text-left opacity-0 z-10"
       >
         <p className="text-[#2D3B36] font-inter text-lg leading-relaxed">
-          Transform your skincare routine with premium products that restore,
-          protect, and enhance your natural glow every day.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transform your
+          skincare routine with premium products that restore, protect, and
+          enhance your natural glow every day.
         </p>
       </div>
 
-      {/* Title */}
       <h1
         ref={titleRef}
-        className="text-5xl sm:text-6xl md:text-7xl font-bold text-[#2D3B36] font-inter leading-tight tracking-tight mb-8 opacity-0"
+        className="text-5xl sm:text-6xl md:text-7xl font-bold text-[#2D3B36] font-inter leading-tight tracking-tight opacity-0 mt-4 sm:mt-0"
       >
         GLOW <br />
         NATUR- <br />
         ALLY
       </h1>
 
-      {/* Button */}
+      <div className="hidden md:block mt-4 mb-10"></div>
       <div
         ref={buttonRef}
-        className="absolute bottom-[290px] left-20 md:left-16 z-10 opacity-0"
+        className="absolute bottom-[290px] left-20 md:left-16 z-10 opacity-0 md:opacity-100 md:block hidden"
       >
         <button className="bg-[#2D3B36] text-[#FEFFF4] px-8 py-4 rounded-full font-inter font-medium hover:bg-[#35433E] transition-all duration-300 transform hover:scale-105">
           Shop Now
         </button>
       </div>
 
-      {/* Image with floating badge */}
       <div
         ref={imageRef}
         className="relative w-full max-w-sm rounded-3xl overflow-hidden shadow-2xl opacity-0 transition-transform duration-300 hover:scale-105"
@@ -121,8 +117,6 @@ const HeroSection = () => {
           alt="Woman with avocado face mask"
           className="w-full h-[450px] object-cover"
         />
-
-        {/* Floating Badge */}
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 bg-[#FEFFF4] px-4 py-2 rounded-full flex items-center gap-3 shadow-md w-[360px] h-[70px]">
           <div className="w-[60px] h-[60px] rounded-full border border-dashed border-[#2D3B36] flex items-center justify-center shrink-0">
             <div className="w-[52px] h-[52px] bg-[#2D3B36] rounded-full flex items-center justify-center overflow-hidden transition-transform duration-300 hover:scale-105">
