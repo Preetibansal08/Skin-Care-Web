@@ -41,7 +41,7 @@ function App() {
         } transition-opacity duration-1000`}
       >
         <Header />
-        <div className="h-[2px] md:h-[40px] bg-[#EFF5E1]"></div>
+        <div className="h-[2px] sm:h-20 md:h-[40px] bg-[#EFF5E1]"></div>
         <HeroSection />
 
         <DescriptionSection />

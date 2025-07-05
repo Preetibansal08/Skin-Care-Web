@@ -10,7 +10,8 @@
 
 /* Ensuring smooth scrolling */
 html {
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
   height: 100%;  /* Ensure the document takes up full height */
 }
 
@@ -23,6 +24,10 @@ body {
   overflow-x: hidden;  /* Prevent horizontal scrolling */
   min-height: 100vh;  /* Ensure body takes full height of viewport */
 }
+html, body {
+  overflow-x: hidden;
+}
+
 
 /* App wrapper ensures full height */
 .App {
