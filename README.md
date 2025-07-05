@@ -44,49 +44,64 @@ cd skin-care-web-website
 npm install     # or yarn install
 npm run dev     # or yarn dev
 Visit: http://localhost:5173
+```
 
-📁 Project Structure
-css
-Copy
-Edit
-skin-care-web/
+ Open your browser and visit `http://localhost:5173`
+
+## 📦 Project Structure
+
+```
+skincare-website/
 ├── src/
-│   ├── assets/              # Images & SVGs
-│   ├── components/          # React components
+│   ├── assets/         # Images and static assets
+│   │   └── girl.png
+│   ├── components/     # React components
 │   │   ├── Header.jsx
 │   │   ├── HeroSection.jsx
 │   │   ├── ProductShowcase.jsx
 │   │   ├── Footer.jsx
-│   ├── App.jsx
-│   └── main.jsx
-├── public/
-├── index.html
-├── package.json
-└── vite.config.js
-🎨 Customization
-Tailwind Color Palette (tailwind.config.js)
-Primary: #35433E (Dark Green)
+│   │   └── ...
+│   ├── App.jsx        # Main application component
+│   └── main.jsx       # Application entry point
+├── public/            # Public assets
+├── index.html         # HTML template
+├── package.json       # Project dependencies
+└── vite.config.js     # Vite configuration
+```
 
-Background: #EFF5E1 (Light Cream)
+## 🎨 Key Components
 
-Text: #2D3B36 (Charcoal)
+- **Header**: Responsive navigation with animated hamburger menu
+- **HeroSection**: Dynamic hero section with floating elements and text animations
+- **ProductShowcase**: Product display with hover effects and descriptions
+- **Footer**: Modern footer with background text effect and social links
 
-GSAP Animations
-Page load transitions
+## 🔧 Customization
 
-Scroll reveals
+### Colors
+The website uses a custom color palette that can be modified in `tailwind.config.js`:
+- Primary: #35433E (Dark Green)
+- Background: #EFF5E1 (Light Cream)
+- Text: #2D3B36 (Charcoal)
 
-Hover effects
+### Animations
+GSAP animations can be customized in individual components:
+- Loading screen animations
+- Scroll triggers
+- Hover effects
+- Text and element transitions
 
-Text and image entrance animations
+## 📱 Responsive Design
 
-📱 Responsive Design
-Mobile: < 768px
+The website is fully responsive with breakpoints for:
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
 
-Tablet: 768px – 1024px
+## 🤝 Contributing
 
-Desktop: > 1024px
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-🤝 Contributing
-Contributions are welcome!
-Feel free to fork this repository, make improvements, and open a pull request.
+
+
+---
